@@ -757,6 +757,8 @@ func Provider() terraform.ResourceProvider {
 			"aws_pinpoint_event_stream":                        resourceAwsPinpointEventStream(),
 			"aws_pinpoint_gcm_channel":                         resourceAwsPinpointGCMChannel(),
 			"aws_pinpoint_sms_channel":                         resourceAwsPinpointSMSChannel(),
+			"aws_sagemaker_lifecycle_config":                   resourceAwsSagemakerLifeCycleConfiguration(),
+			"aws_glue_dev_endpoint":                            resourceAwsGlueDevEndpoint(),
 
 			// ALBs are actually LBs because they can be type `network` or `application`
 			// To avoid regressions, we will add a new resource for each and they both point
